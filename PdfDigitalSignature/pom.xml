@@ -12,7 +12,7 @@
 	<artifactId>PdfDigitalSignature</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>PdfDigitalSignature</name>
-	<description>A Springboot application to add signature to a pdf.</description>
+	<description>A Spring-boot application to add signature to a pdf.</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -40,8 +40,9 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.ai</groupId>
-			<artifactId>spring-ai-pdf-document-reader</artifactId>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>2.0.27</version>
 		</dependency>
 		<dependency>
 			<groupId>org.bouncycastle</groupId>
@@ -49,11 +50,6 @@
 			<version>1.78.1</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
